@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Welcome to Paxton Minecraft Server!!!</title>
+</head>
+
+<body>
+  <h1>Paxton Minecraft Server!!!</h1>
+  <h2>IP: vanvanvan.aternos.me:38612</h2>
+  <p>Come to our Server, it is in 1.19.3 with forge</p>
+  
+  <button onclick="downloadFiles()">Download Mods</button>
+
+  <script>
+    function downloadFiles() {
+      var fileUrls = [
+        "1.jar",
+        "2.jar",
+        "3.jar",
+        "4.jar",
+        "5.jar",
+        "6.jar",
+        "7.jar",
+        "8.jar"
+      ];
+
+      for (var i = 0; i < fileUrls.length; i++) {
+        var link = document.createElement("a");
+        link.href = fileUrls[i];
+        link.download = "mod" + (i + 1) + ".jar";
+        link.click();
+      }
+    }
+  </script>
+</body>
+
+</html>
