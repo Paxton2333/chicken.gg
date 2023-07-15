@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Login</title>
+</head>
+
+<body>
+  <h1>Login</h1>
+
+  <form onsubmit="return validateLogin()">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required><br><br>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required><br><br>
+
+    <input type="submit" value="Login">
+  </form>
+
+  <script>
+    function validateLogin() {
+      var username = document.getElementById('username').value;
+      var password = document.getElementById('password').value;
+
+      if (username === 'yaju_senpai' && password === '114514') {
+        alert('Login successful!');
+        window.location.href = 'main.html'; // Redirect to main.html
+        return false;
+      } else {
+        alert('Bruh wrong password! ez ez ez ez ez ez ez ez ez');
+        window.location.href = 'index.html'; // Redirect to index.html
+        return false;
+      }
+    }
+  </script>
+</body>
+
+</html>
