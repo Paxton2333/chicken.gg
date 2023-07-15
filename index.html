@@ -67,7 +67,7 @@
   </div>
 
   <h1>Welcome to Paxton Minecraft Server!</h1>
-  <h2>IP: vanvanvan.aternos.me:38612</h2>
+  <h2 onclick="copyToClipboard('vanvanvan.aternos.me:38612')">IP: vanvanvan.aternos.me:38612</h2>
   <p>Come join our server! We're running Minecraft version 1.19.3 with Forge.</p>
 
   <script>
@@ -89,6 +89,16 @@
         link.download = "mod" + (i + 1) + ".jar";
         link.click();
       }
+    }
+    
+    function copyToClipboard(text) {
+      var tempInput = document.createElement("input");
+      tempInput.value = text;
+      document.body.appendChild(tempInput);
+      tempInput.select();
+      document.execCommand("copy");
+      document.body.removeChild(tempInput);
+      alert("Copied to clipboard: " + text);
     }
   </script>
 </body>
