@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <title>Welcome to Paxton Minecraft Server!</title>
   <style>
@@ -10,51 +9,49 @@
       text-align: center;
       padding-top: 50px;
     }
+h1 {
+  color: #4a90e2;
+}
 
-    h1 {
-      color: #4a90e2;
-    }
+h2 {
+  color: #333333;
+}
 
-    h2 {
-      color: #333333;
-    }
+p {
+  color: #666666;
+  margin-bottom: 30px;
+}
 
-    p {
-      color: #666666;
-      margin-bottom: 30px;
-    }
+.top-bar {
+  background-color: #333333;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-    .top-bar {
-      background-color: #333333;
-      padding: 10px 0;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
+.logo {
+  color: #ffffff;
+  font-size: 20px;
+  margin-left: 20px;
+}
 
-    .logo {
-      color: #ffffff;
-      font-size: 20px;
-      margin-left: 20px;
-    }
+.button {
+  padding: 10px 20px;
+  background-color: #4a90e2;
+  color: #ffffff;
+  font-size: 16px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  margin-right: 20px;
+}
 
-    .button {
-      padding: 10px 20px;
-      background-color: #4a90e2;
-      color: #ffffff;
-      font-size: 16px;
-      text-decoration: none;
-      border-radius: 5px;
-      transition: background-color 0.3s ease;
-      margin-right: 20px;
-    }
-
-    .button:hover {
-      background-color: #357ac7;
-    }
+.button:hover {
+  background-color: #357ac7;
+}
   </style>
 </head>
-
 <body>
   <div class="top-bar">
     <div class="logo">Paxton Minecraft Server</div>
@@ -63,13 +60,12 @@
       <a href="https://discord.gg/auZy82hVMr" class="button">Join Discord</a>
       <a href="#" onclick="downloadFiles()" class="button">Download Mods</a>
       <a href="login.html" class="button">Login</a>
+      <a href="os.html" class="button">Other Server</a>
     </div>
   </div>
-
   <h1>Welcome to Paxton Minecraft Server!</h1>
   <h2 onclick="copyToClipboard('vanvanvan.aternos.me:38612')">IP: vanvanvan.aternos.me:38612</h2>
   <p>Come join our server! We're running Minecraft version 1.19.3 with Forge.</p>
-
   <script>
     function downloadFiles() {
       var fileUrls = [
@@ -102,5 +98,4 @@
     }
   </script>
 </body>
-
 </html>
